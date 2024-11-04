@@ -16,7 +16,7 @@ public class task2 {
         Scanner scanner = new Scanner(System.in);
         String inputData = scanner.nextLine();
         //Создание паттерна регулярного выражения и объекта проверки
-        Pattern pattern = Pattern.compile("^#[\\d[abcdef][ABCDEF]]{6}$");
+        Pattern pattern = Pattern.compile("^#[\\dabcdefABCDEF]{6}$");
         Matcher matcher = pattern.matcher(inputData);
         //Выводим результат
         if (matcher.matches())

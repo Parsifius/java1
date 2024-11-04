@@ -34,40 +34,16 @@ public class task3
     {
         FileReader fileReader = new FileReader("cr1task3.txt");
         Scanner scanner = new Scanner(fileReader);
-        //Считываем в список
-        ArrayList <String> names = new ArrayList<>();
-        while (scanner.hasNextLine())
-            names.add(scanner.nextLine().split(" ")[0]);
-        // Перебираем список, подсчитывая количество вхождений в словарь
+        // Считываем новое имя: если есть, то увеличиваем счетчик в словаре, иначе добавляем его туда
         TreeMap<String, Integer> counter = new TreeMap<>();
-        for (Integer i = 0; i < names.size(); i++)
-        {
-            if (!counter.containsKey(names.get(i)))
-                counter.put(names.get(i), 1);
-            else
-                counter.put(names.get(i), counter.get(names.get(i))+1);
+        while (scanner.hasNextLine()) {
+            String name = scanner.nextLine().split(" ")[0];
+            counter.put(name, counter.getOrDefault(name, 0) + 1);
         }
-        //Заполняем новый массив в порядке убывания количества повторений
-        ArrayList <String> sortedNames = new ArrayList<>();
-        for (String c : counter.keySet())
-        {
-            if (sortedNames.size() == 0)
-                sortedNames.add(c);
-            else
-            {
-                Integer j = 0;
-                while (j < sortedNames.size())
-                {
-                    if (counter.get(sortedNames.get(j))>counter.get(c))
-                        j++;
-                    else
-                        break;
-                }
-                    sortedNames.add(j, c);
-            }
-        }
+        // Создаем список Map.Entry и сортируем его по значению (количество повторений) в порядке убывания
+        List<Map.Entry<String, Integer>> sortedNames = new ArrayList<>(counter.entrySet());
+        sortedNames.sort((entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue()));
         //Выводим результаты
-        System.out.println("Счетчик: " + counter);
-        System.out.println("Отсортированный порядок: " + sortedNames);
+        System.out.println("Счетчик: " + sortedNames);
     }
 }
