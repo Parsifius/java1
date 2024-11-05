@@ -2,8 +2,6 @@ package org.example.CR2.T3;
 
 public class Arithmetic extends Progression{
 
-    double first, diff;
-
     public Arithmetic(double first, double diff) {
         super(first, diff);
     }

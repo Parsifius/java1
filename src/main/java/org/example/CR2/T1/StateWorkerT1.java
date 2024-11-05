@@ -3,10 +3,8 @@ package org.example.CR2.T1;
 import java.util.Date;
 
 public class StateWorkerT1 extends WorkerT1{
-    //Поля имя, фамилия, профессия
-    String name, surname, profession;
-    //Поля количество денег, Месячная зарплата
-    double balance, monthRate;
+    //Дополнительное поле Месячная зарплата
+    double monthRate;
     //Поле даты начала работы в компании
     Date dateStart;
 

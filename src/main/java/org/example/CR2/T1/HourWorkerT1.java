@@ -1,10 +1,8 @@
 package org.example.CR2.T1;
 
 public class HourWorkerT1 extends WorkerT1 {
-    //Поля имя, фамилия, профессия
-    String name, surname, profession;
-    //Поля количество денег, почасовая ставка
-    double balance, hourRate;
+    //Дополнительное поле почасовая ставка
+    double hourRate;
 
     //Конструктор без параметров
     public HourWorkerT1() {
@@ -19,7 +17,8 @@ public class HourWorkerT1 extends WorkerT1 {
     }
 
     //Метод начисления зарплаты в зависимости от количества часов
-    public void salary(int hour){
+    @Override
+    public void salary(double hour){
         super.salary(this.hourRate*hour);
     }
 

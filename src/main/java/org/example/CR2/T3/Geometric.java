@@ -1,7 +1,6 @@
 package org.example.CR2.T3;
 
 public class Geometric extends Progression{
-    double first, diff;
 
     public Geometric(double first, double diff) {
         super(first, diff);
