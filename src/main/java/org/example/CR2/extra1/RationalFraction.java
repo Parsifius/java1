@@ -59,7 +59,7 @@ public class RationalFraction implements Comparable <RationalFraction> {
     //Метод сложения двух дробей с возвратом результата
     public RationalFraction add(RationalFraction other)
     {
-        Integer newDenominator = this.denominator * other.denominator / gcd(this.denominator, other.denominator);
+        Integer newDenominator = this.denominator / gcd(this.denominator, other.denominator) * other.denominator;
         Integer newNumerator = this.numerator * (newDenominator / this.denominator) + other.numerator * (newDenominator / other.denominator);
         RationalFraction result = new RationalFraction(newNumerator, newDenominator);
         result.reduce();
