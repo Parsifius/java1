@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Иван",
+    "birthDate": "02.06.2005",
+    "email": "vancouver.evdokimov@yandex.ru"
+  },
+  {
+    "name": "Денис",
+    "birthDate": "23.02.2004",
+    "email": "denis@yandex.ru"
+  },
+  {
+    "name": "Элоиза",
+    "birthDate": "16.06.2004",
+    "email": "eloiza@yandex.ru"
+  },
+  {
+    "name": "Алиса",
+    "birthDate": "31.12.1994",
+    "email": "alisa@yandex.ru"
+  }
+]

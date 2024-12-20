@@ -1,0 +1,24 @@
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getPersons
+INFO: JSON файл успешно считан
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getMeanAge
+INFO: Средний возраст всех персон в списке равен 22.0
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getFilteredPersons
+INFO: Проверку на совершеннолетие прошла персона с именем Иван
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getFilteredPersons
+INFO: Проверку на совершеннолетие прошла персона с именем Денис
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getFilteredPersons
+INFO: Проверку на совершеннолетие прошла персона с именем Элоиза
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getFilteredPersons
+INFO: Проверку на совершеннолетие прошла персона с именем Алиса
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getLeapYearPersons
+INFO: Проверку на високосный год рождения прошла персона с именем Денис
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getLeapYearPersons
+INFO: Проверку на високосный год рождения прошла персона с именем Элоиза
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getSortedPersons
+INFO: Сортировка отработала за 2 мс
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getPersonGroups
+INFO: Количество детей в группе: 0
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getPersonGroups
+INFO: Количество взрослых в группе: 4
+дек. 20, 2024 11:04:10 AM org.example.CR3.Main getPersonGroups
+INFO: Количество пенсионеров в группе: 0
